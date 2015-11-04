@@ -6,16 +6,25 @@ Objective:
   
   For sign up:
   email
+  
   password
+  
   adrees(with confirmation on a googlemap pin that could be moved) - save 2 direccion (String and google coord)
+  
   description (Text area for making easier to find the adress).
+  
   
   User: Can login, once loged in there is a form , that when submit add a new order to a collection.
   The form has the folowings inputs: 
+  
   Quantity/Cantidad(32,64,96,128):dropdown,
+  
   Fish/Pescado(Salmon,Kanicama,Langostino):checkbox,
+  
   mat/Esterilla(Yes/No)checkbox,
+  
   Date/Fecha(restriction: if is 5:00pm inArgentina minDate:nextDay),
+  
   Submit button (Enviar)
   
   User will also have a view of all of his orders with a delete button.
