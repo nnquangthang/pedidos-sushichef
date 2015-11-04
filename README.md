@@ -3,6 +3,7 @@ Meteor app, for taking and managing online ordering. (Argentina - español)
 
 Objective:
   Creat a web app for taking oders of "Sushichef" a little box that contains all the products you need for make sushi at home.
+  
   For sign up:
   email
   password
