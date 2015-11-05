@@ -1,0 +1,10 @@
+{
+  "schemas": {
+    "posts": {
+      "title": {
+        "label": "cantidad",
+        "placeholder": "Ingresar una cantidad"
+      }
+    }
+  }
+}

@@ -1,45 +1,37 @@
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="initial-scale=1.0">
-  <title>index</title>
-  <link rel="stylesheet" href="css/standardize.css">
-  <link rel="stylesheet" href="css/index-grid.css">
-  <link rel="stylesheet" href="css/index.css">
+  <title>Pedido Online</title>
+   <link rel="stylesheet" href="pedidos-sushichef.css">
 </head>
-<body class="body page-index clearfix">
-  <div class="element element-1"></div>
-  <div class="element element-2"></div>
-  <div class="container container-1 clearfix">
-    <p class="text text-1">Cantidad de piezas</p>
-    <p class="text text-2">Tu pedido:</p>
-    <select class="_select" name="Piezas">
-      <option value="32">32</option>
-      <option value="64">64</option>
-      <option value="96">96</option>
-      <option value="128">128</option>
-    </select>
-    <p class="text text-3">Que pescados?</p>
-    <div class="container clearfix">
-      <label class="checkbox-label checkbox-label-1 clearfix">
-        <input class="checkbox" type="checkbox">
-        <span class="point-text">Salmon (<span>10</span> piezas)</span>
-      </label>
-      <label class="checkbox-label checkbox-label-2 clearfix">
-        <input class="checkbox" type="checkbox">
-        <span class="point-text">Kanicama (<span>10</span> piezas)</span>
-      </label>
-      <label class="checkbox-label checkbox-label-3 clearfix">
-        <input class="checkbox" type="checkbox">
-        <span class="point-text">Langostinos(<span>10</span> piezas)</span>
-      </label>
-    </div>
-    <div class="element"></div>
-    <p class="text text-4">Extras</p>
-    <label class="radio-label clearfix">
-      <input class="radio" type="radio">
-      <span class="point-text">Esterilla</span>
-    </label>
-    <button class="_button">LISTO!</button>
-  </div>
-  <div class="container container-3 clearfix"></div>
+<body>
+
 </body>
+
+<template name="home">
+    {{#if currentUser}}
+    {{>formulariopedido}}
+    {{else}}
+    <h1>INICIA SESION O REGISTRATE!</h1>
+    {{/if}}
+</template>
+
+<template name="editarPerfil">
+</template>
+
+<template name="formulariopedido">
+     {{> quickForm collection="Pedidos" id="insertformulariopedido" type="insert" template="bootstrap3-horizontal" }}
+</template>
+
+<template name="pedido">
+
+</template>
+
+<template name="main">
+    <div class="panel panel-primary">
+        <div class="panel-heading">{{>loginButtons}}</div>
+        {{>yield}}
+    </div>
+</template>
+
+<template name="_loginButtonsAdditionalLoggedInDropdownActions">
+    <button class="btn btn-default btn-block" id="login-buttons-edit-profile">Editar perfil</button>
+</template>
