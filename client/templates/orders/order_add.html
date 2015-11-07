@@ -1,45 +1,48 @@
 <template name="orderAdd">
-<h3>Place order</h3>
-<form id="order_add" class="ui form segment">
-  <!--Quantity-->
-  <div class="eight wide field">
-    <label>Quantity</label>
-    <select name="quantity" class="ui dropdown">
-      <option value="">How many?</option>
-      <option value="32">32</option>
-      <option value="64">64</option>
-      <option value="96">96</option>
-      <option value="128">128</option>
-    </select>
-  </div>
-  <!--Fish-->
-  <div class="sixteen wide field">
-    <label>Fishes</label>
-    <select multiple="" name="fishes" class="ui dropdown">
-      <option value="">Delicious!</option>
-      <option value="Salmon">Salmon</option>
-      <option value="Langostino">Langostino</option>
-      <option value="Kanicama">Kanicama</option>
-    </select>
-  </div>
-  <!--Mat-->
-  <div class="eight wide field">
-    <label>Mat?</label>
-    <select name="mat" class="ui dropdown">
-      <option value="">Good for fishes</option>
-      <option value="1">Yes</option>
-      <option value="0">No</option>
-    </select>
-  </div>
-
-  <!--Datetime picker-->
-  <div class="eight wide field">
-    <label>Date to deliver</label>
-    <input name="date" class="datepicker">
-  </div>
-  <!--Submit-->
-  <div class="ui blue submit button">Submit</div>
-  <div class="ui error message"></div>
-</form>
-
+  <h3>Place order</h3>
+  <!--Testing-->
+  <form name="orderAdd" class="ui form segment">
+    <div class="ui error message"></div>
+    <!--Quantity-->
+    <div class="field">
+      <label>Quantity</label>
+      <select name="quantity" class="ui dropdown">
+        <option value="">How many?</option>
+        <option value="32">32</option>
+        <option value="64">64</option>
+        <option value="96">96</option>
+        <option value="128">128</option>
+      </select>
+    </div>
+    <!--Fishes-->
+    <div class="field">
+      <label>Fishes</label>
+      <select name="fishes" multiple="" class="ui dropdown">
+        <option value="">Fishes</option>
+        <option value="Salmon">Salmon</option>
+        <option value="Langostino">Langostino</option>
+        <option value="Kanicama">Kanicama</option>
+      </select>
+    </div>
+    <!--Mat-->
+    <div class="field">
+      <label>Mat</label>
+      <select name="mat" class="ui dropdown">
+        <option value="">Want it?</option>
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+    </div>
+    <!--Datepicker-->
+    <div class="field">
+      <label>Date</label>
+      <div style="position: relative">
+        <input type="text" name="date" class="datepicker">
+      </div>
+    </div>
+    
+    <!--Submit+Clear-->
+    <div class="ui blue submit button">Submit</div>
+    <div id="clearButton" class="ui button">Clear</div>
+  </form>
 </template>
