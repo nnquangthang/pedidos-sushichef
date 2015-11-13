@@ -1,0 +1,22 @@
+<template name="ordersList">
+<table class="ui sortable celled striped blue table">
+  <thead>
+    <tr>
+      <th>Customer</th>
+      <th>Quantity</th>
+      <th>Fishes</th>
+      <th>Mat</th>
+      <th class="sorted ascending">Date D-M-Y
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+  {{#if subsReady 'allUsersData'}}
+    {{#each getOrders}}
+      {{> orderItem}}
+    {{/each}}
+  {{/if}}
+  </tbody>
+</table>
+{{> modal getModalData}}
+</template>

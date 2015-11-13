@@ -1,7 +1,7 @@
 Template.orderAdd.rendered=function(){
   // Datepicker
   $('.datepicker').pickadate({
-  format: 'mm/dd/yyyy',
+  format: 'dd-mm-yyyy',
     // Blur function onClose event for Semantic-UI Form Validations
     onClose: function(){
       $('.datepicker').blur();
@@ -46,8 +46,9 @@ Template.orderAdd.events({
     var userId = Meteor.user()._id;
     var quantity = order.quantity;
     var fishes = order.fishes;
-    var mat = order.mat;
-    var date = new Date(order.date);
+    // Convert mat value to Integer
+    var mat = parseInt(order.mat);
+    var date = order.date;
     // Insert to collection.Orders
     Orders.insert({
       userId: userId,

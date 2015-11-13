@@ -1,0 +1,13 @@
+<template name="orderItem">
+  <tr>
+    {{#with getUserData userId}}
+    <td class="customer">
+    {{firstName}} {{lastName}}
+    </td>
+    {{/with}}
+    <td>{{quantity}}</td>
+    <td>{{fishes}}</td>
+    <td>{{yesOrNo mat}}</td>
+    <td>{{date}}</td>
+  </tr>
+</template>

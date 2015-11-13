@@ -1,8 +1,14 @@
 <template name="orderAdd">
   <h3>Place order</h3>
-  <!--Testing-->
   <form name="orderAdd" class="ui form segment">
-    <div class="ui error message"></div>
+    <!--User-->
+    <div class="disabled field">
+      <label>Name</label>
+      <select class="ui dropdown">
+        <option value="1">Web: Name</option>
+        <option value="0">Phone: Name</option>
+      </select>
+    </div>
     <!--Quantity-->
     <div class="field">
       <label>Quantity</label>

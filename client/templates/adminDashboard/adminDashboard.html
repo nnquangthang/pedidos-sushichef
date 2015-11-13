@@ -1,0 +1,23 @@
+<template name="adminDashboard">
+<div class="ui container">
+  <h1 class="title">Administrator Dashboard</h1>
+    <p>Content</p>
+    <!--Menu-->
+    <div class="ui secondary pointing blue menu">
+      <!--Tab-->
+      <a class="item active" data-tab="orders">Orders</a>
+      <a class="item" data-tab="notifications">Notifications</a>
+      <a class="item" data-tab="messages">Messages</a>
+    </div>
+    <!--Tab Content-->
+    <div class="ui tab active" data-tab="orders">
+      {{> ordersList}}
+    </div>
+    <div class="ui tab" data-tab="notifications">
+      <p>Notifications Content</p>
+    </div>
+    <div class="ui tab" data-tab="messages">
+      <p>Messages Content</p>
+    </div>
+</div>
+</template>

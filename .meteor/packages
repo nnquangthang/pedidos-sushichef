@@ -28,3 +28,6 @@ themeteorchef:bert
 fortawesome:fontawesome
 semantic:ui-css
 jedirandy:pickadate
+momentjs:moment
+semantic:ui
+flemay:less-autoprefixer

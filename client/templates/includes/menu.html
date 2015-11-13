@@ -1,9 +1,30 @@
 <template name="menu">
-<div class="ui large menu">
+<div class="ui secondary blue menu">
   <div class="header item">SUSHICHEF</div>
   <a href="{{pathFor 'home'}}" class="item">Home</a>
+  <!--Right menu-->
   <div class="right menu">
-    <a class="item">Administrator</a>
+    <!--Notifications-->
+    <div class="item">
+      <div class="ui labeled button" tabindex="0">
+        <div class="ui blue button">
+          <i class="heart icon"></i> Notifications
+        </div>
+        <a class="ui basic blue left pointing label">
+          10
+        </a>
+      </div>
+    <div class="ui fluid popup">
+      <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+      </ul>
+    </div>
+
+    </div>
+    
+    <a href="{{pathFor 'adminDashboard'}}" class="item">Administrator</a>
     <div class="item">
       {{> atNavButton}}
     </div>
